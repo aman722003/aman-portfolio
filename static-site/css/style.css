@@ -1,16 +1,10 @@
-/* Google Font */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Reset */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-/* Body */
 
 body{
 
@@ -50,14 +44,25 @@ nav{
 
 .logo{
 
-    font-size:28px;
+    font-size:32px;
 
     font-weight:700;
 
     color:#38bdf8;
 }
 
-/* Navbar List */
+/* Nav Right */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+/* Nav Links */
 
 nav ul{
 
@@ -68,7 +73,7 @@ nav ul{
     gap:30px;
 }
 
-/* Navbar Links */
+/* Links */
 
 nav ul li a{
 
@@ -81,14 +86,32 @@ nav ul li a{
     transition:0.3s;
 }
 
-/* Hover Effect */
-
 nav ul li a:hover{
 
     color:#38bdf8;
 }
 
-/* Hero Section */
+/* Theme Toggle */
+
+.theme-toggle{
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+/* Menu Toggle */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+}
+
+/* Hero */
 
 .hero{
 
@@ -107,40 +130,34 @@ nav ul li a:hover{
     padding:120px 20px;
 }
 
-/* Hero Heading */
-
 .hero h1{
 
-    font-size:70px;
+    font-size:72px;
 
     margin-bottom:20px;
 }
 
-/* Typing Text */
-
 .hero h2{
 
-    font-size:40px;
+    font-size:42px;
 
     color:#38bdf8;
 
     margin-bottom:20px;
 }
 
-/* Hero Paragraph */
-
 .hero p{
 
     font-size:20px;
 
+    color:#cbd5e1;
+
     max-width:700px;
 
     margin-bottom:30px;
-
-    color:#cbd5e1;
 }
 
-/* Hero Buttons */
+/* Buttons */
 
 .hero-buttons{
 
@@ -149,26 +166,22 @@ nav ul li a:hover{
     gap:20px;
 }
 
-/* Buttons */
-
 .btn{
 
     background:#38bdf8;
 
     color:white;
 
-    padding:14px 30px;
+    text-decoration:none;
+
+    padding:14px 28px;
 
     border-radius:10px;
-
-    text-decoration:none;
 
     font-weight:600;
 
     transition:0.3s;
 }
-
-/* Button Hover */
 
 .btn:hover{
 
@@ -177,18 +190,16 @@ nav ul li a:hover{
     transform:translateY(-3px);
 }
 
-/* About Section */
+/* About */
 
 .about{
 
     padding:100px 10%;
 
-    background:#1e293b;
-
     text-align:center;
-}
 
-/* About Heading */
+    background:#1e293b;
+}
 
 .about h2{
 
@@ -196,8 +207,6 @@ nav ul li a:hover{
 
     margin-bottom:30px;
 }
-
-/* About Paragraph */
 
 .about p{
 
@@ -212,7 +221,7 @@ nav ul li a:hover{
     margin:auto;
 }
 
-/* Skills Section */
+/* Skills */
 
 .skills{
 
@@ -221,8 +230,6 @@ nav ul li a:hover{
     text-align:center;
 }
 
-/* Skills Heading */
-
 .skills h2{
 
     font-size:40px;
@@ -230,18 +237,16 @@ nav ul li a:hover{
     margin-bottom:50px;
 }
 
-/* Skills Grid */
-
 .skills-container{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(200px, 220px));
+
+    justify-content:center;
 
     gap:25px;
 }
-
-/* Skill Card */
 
 .skill-card{
 
@@ -254,8 +259,6 @@ nav ul li a:hover{
     transition:0.3s;
 }
 
-/* Skill Card Hover */
-
 .skill-card:hover{
 
     transform:translateY(-10px);
@@ -263,25 +266,21 @@ nav ul li a:hover{
     background:#334155;
 }
 
-/* Skill Text */
-
 .skill-card h3{
 
     font-size:24px;
 }
 
-/* Projects Section */
+/* Projects */
 
 .projects{
 
     padding:100px 10%;
 
-    background:#1e293b;
-
     text-align:center;
-}
 
-/* Projects Heading */
+    background:#1e293b;
+}
 
 .projects h2{
 
@@ -290,18 +289,14 @@ nav ul li a:hover{
     margin-bottom:50px;
 }
 
-/* Projects Grid */
-
 .projects-container{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(350px,1fr));
 
     gap:30px;
 }
-
-/* Project Card */
 
 .project-card{
 
@@ -314,14 +309,10 @@ nav ul li a:hover{
     transition:0.3s;
 }
 
-/* Project Hover */
-
 .project-card:hover{
 
     transform:translateY(-10px);
 }
-
-/* Project Images */
 
 .project-card img{
 
@@ -338,16 +329,12 @@ nav ul li a:hover{
     display:block;
 }
 
-/* Project Title */
-
 .project-card h3{
 
     font-size:28px;
 
     margin-bottom:15px;
 }
-
-/* Project Description */
 
 .project-card p{
 
@@ -358,8 +345,6 @@ nav ul li a:hover{
     margin-bottom:20px;
 }
 
-/* Project Buttons */
-
 .project-buttons{
 
     display:flex;
@@ -368,8 +353,6 @@ nav ul li a:hover{
 
     gap:20px;
 }
-
-/* Project Links */
 
 .project-buttons a{
 
@@ -386,14 +369,12 @@ nav ul li a:hover{
     transition:0.3s;
 }
 
-/* Project Button Hover */
-
 .project-buttons a:hover{
 
     background:#0ea5e9;
 }
 
-/* Contact Section */
+/* Contact */
 
 .contact{
 
@@ -402,16 +383,12 @@ nav ul li a:hover{
     text-align:center;
 }
 
-/* Contact Heading */
-
 .contact h2{
 
     font-size:40px;
 
     margin-bottom:20px;
 }
-
-/* Contact Paragraph */
 
 .contact p{
 
@@ -421,8 +398,6 @@ nav ul li a:hover{
 
     margin-bottom:30px;
 }
-
-/* Contact Links */
 
 .contact-links{
 
@@ -434,8 +409,6 @@ nav ul li a:hover{
 
     flex-wrap:wrap;
 }
-
-/* Contact Buttons */
 
 .contact-links a{
 
@@ -451,8 +424,6 @@ nav ul li a:hover{
 
     transition:0.3s;
 }
-
-/* Contact Hover */
 
 .contact-links a:hover{
 
@@ -472,25 +443,25 @@ footer{
     color:#94a3b8;
 }
 
-/* Theme Toggle */
+/* Reveal Animation */
 
-.theme-toggle{
+.reveal{
 
-    font-size:28px;
+    opacity:0;
 
-    cursor:pointer;
+    transform:translateY(80px);
 
-    transition:0.3s;
+    transition:all 1s ease;
 }
 
-/* Theme Toggle Hover */
+.reveal.active{
 
-.theme-toggle:hover{
+    opacity:1;
 
-    transform:rotate(20deg);
+    transform:translateY(0);
 }
 
-/* Light Theme */
+/* Light Mode */
 
 body.light-mode{
 
@@ -502,6 +473,11 @@ body.light-mode{
 body.light-mode nav{
 
     background:white;
+}
+
+body.light-mode nav ul li a{
+
+    color:black;
 }
 
 body.light-mode .about,
@@ -533,61 +509,56 @@ body.light-mode footer{
     color:#374151;
 }
 
-body.light-mode nav ul li a{
-
-    color:black;
-}
-
-/* Scroll Reveal Animation */
-
-.reveal{
-
-    opacity:0;
-
-    transform:translateY(80px);
-
-    transition:all 1s ease;
-}
-
-.reveal.active{
-
-    opacity:1;
-
-    transform:translateY(0);
-}
-
-/* Mobile Responsive */
+/* Mobile */
 
 @media(max-width:768px){
 
     nav{
 
-        flex-direction:column;
+        padding:20px;
+    }
 
-        gap:15px;
+    .menu-toggle{
 
-        padding:15px;
+        display:block;
     }
 
     nav ul{
 
-        flex-wrap:wrap;
+        position:absolute;
 
-        justify-content:center;
+        top:80px;
 
-        gap:15px;
+        left:0;
+
+        width:100%;
+
+        background:#111827;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        padding:25px 0;
+
+        display:none;
+    }
+
+    nav ul.active{
+
+        display:flex;
     }
 
     .hero{
 
-        padding-top:220px;
-
-        text-align:center;
+        padding-top:140px;
     }
 
     .hero h1{
 
-        font-size:42px;
+        font-size:48px;
     }
 
     .hero h2{
@@ -595,24 +566,9 @@ body.light-mode nav ul li a{
         font-size:28px;
     }
 
-    .hero p{
-
-        font-size:18px;
-    }
-
     .hero-buttons{
 
         flex-direction:column;
-
-        align-items:center;
-    }
-
-    .about h2,
-    .skills h2,
-    .projects h2,
-    .contact h2{
-
-        font-size:32px;
     }
 
     .projects-container{
@@ -633,7 +589,5 @@ body.light-mode nav ul li a{
     .contact-links{
 
         flex-direction:column;
-
-        align-items:center;
     }
 }
